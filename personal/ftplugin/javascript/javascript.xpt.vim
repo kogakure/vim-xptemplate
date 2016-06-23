@@ -33,7 +33,7 @@ function` `name^(`arg*^)`$BRfun^{
 
 XPT f " anonymous function
 XSET arg*|post=ExpandIfNotEmpty(', ', 'arg*')
-function(`arg*^)`$BRfun^{
+(`arg*^)`$BRfun^ => {
     `^
 }
 
