@@ -4,13 +4,13 @@ XPTemplate priority=personal
 
 XPT desc " decribe block
 XSET arg*|post=ExpandIfNotEmpty(', ', 'arg*')
-describe("`^", (`arg*^)`$BRfun^ => {
+describe('`^', (`arg*^)`$BRfun^ => {
     `^
 });
 
 XPT it " it block
 XSET arg*|post=ExpandIfNotEmpty(', ', 'arg*')
-it("`^", (`arg*^)`$BRfun^ => {
+it('`^', (`arg*^)`$BRfun^ => {
     `^
 });
 
