@@ -28,30 +28,25 @@ XPTvar $CR   */
 XPT fun " function ..( .. ) {..}
 XSET arg*|post=ExpandIfNotEmpty(', ', 'arg*')
 function` `name^(`arg*^)`$BRfun^{
-    `^
 }
 
 XPT f " anonymous function
 XSET arg*|post=ExpandIfNotEmpty(', ', 'arg*')
 (`arg*^)`$BRfun^ => {
-    `^
 }
 
 XPT :f " Object Method
 XSET arg*|post=ExpandIfNotEmpty(', ', 'arg*')
 `methodName^: function(`arg*^)`$BRfun^{
-    `^
 }`,^
 `^
 
 XPT proto " ...prototype... = function\(..) { .. }
 XSET arg*|post=ExpandIfNotEmpty(', ', 'arg*')
 `Class^.prototype.`method^ = function(`arg*^)`$BRfun^{
-    `^
 }
 
 XPT forin " for (var .. in ..) {..}
 for (var `i^ in `array^)`$BRloop^{
     var `e^ = `array^[`i^];
-    `^
 }
