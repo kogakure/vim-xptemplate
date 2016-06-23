@@ -4,25 +4,25 @@ XPTemplate priority=personal
 
 XPT desc " decribe block
 XSET arg*|post=ExpandIfNotEmpty(', ', 'arg*')
-describe("`^", function(`arg*^)`$BRfun^{
+describe("`^", (`arg*^)`$BRfun^ => {
     `^
 });
 
 XPT it " it block
 XSET arg*|post=ExpandIfNotEmpty(', ', 'arg*')
-it("`^", function(`arg*^)`$BRfun^{
+it("`^", (`arg*^)`$BRfun^ => {
     `^
 });
 
 XPT bef " beforeEach
 XSET arg*|post=ExpandIfNotEmpty(', ', 'arg*')
-beforeEach(function(`arg*^)`$BRfun^{
+beforeEach((`arg*^)`$BRfun^ => {
     `^
 });
 
 XPT aft " afterEach
 XSET arg*|post=ExpandIfNotEmpty(', ', 'arg*')
-afterEach(function(`arg*^)`$BRfun^{
+afterEach((`arg*^)`$BRfun^ => {
     `^
 });
 
