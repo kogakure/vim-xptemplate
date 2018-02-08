@@ -25,6 +25,9 @@ XPTvar $CR   */
 
 " ================================= Snippets ===================================
 
+XPT log " console.log
+console.log(`^);
+
 XPT fun " function ..( .. ) {..}
 XSET arg*|post=ExpandIfNotEmpty(', ', 'arg*')
 function` `name^(`arg*^)`$BRfun^{

@@ -1,6 +1,6 @@
 XPTemplate priority=personal
 
-" ================================= Jasmine/Mocha ===================================
+" ================================= Jasmine/Mocha/Jest ===================================
 
 XPT desc " decribe block
 XSET arg*|post=ExpandIfNotEmpty(', ', 'arg*')
